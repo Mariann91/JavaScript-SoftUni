@@ -3,5 +3,3 @@ function square(input) {
   area = squareSide * squareSide
   console.log(area)
 }
-
-square(["5"])
