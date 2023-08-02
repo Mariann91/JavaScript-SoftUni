@@ -25,5 +25,6 @@ function dayOfWeek(input) {
             break;
         default:
             console.log("Error");
+            break;
     }
 }
