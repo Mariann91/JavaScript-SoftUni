@@ -1,14 +1,11 @@
 function walking(input) {
 
     let targetSteps = 10_000;
-    
     let index = 0;
     let walkedSteps = 0;
     
-
     while (true) {
         let currentSteps = input[index];
-        console.log(currentSteps);
 
         if (currentSteps === "Going home") {
             let stepsToHome = Number(input[index + 1]);
@@ -28,7 +25,6 @@ function walking(input) {
         }
 
         currentSteps = Number(currentSteps);
-        console.log(currentSteps);
         walkedSteps += currentSteps;
         
         if (walkedSteps >= targetSteps) {
