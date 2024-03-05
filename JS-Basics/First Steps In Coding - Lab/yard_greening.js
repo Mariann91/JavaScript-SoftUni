@@ -1,9 +1,16 @@
-function calculateCost(input) {
-  let meterPrice = 7.61;
-  let metersToGreen = Number(input[0]);
-  let totalPrice = meterPrice * metersToGreen;
-  let discount = totalPrice * 0.18;
-  let finalPrice = totalPrice - discount;
-  console.log(`The final price is: ${finalPrice} lv.`)
+function yardGreening(data){
+  const pricePerSqM = 7.61;
+  const discountPercent = 0.18;
+ 
+  let SqM = Number(data[0]);
+  
+  let price = SqM * pricePerSqM;
+  let discount = price * discountPercent;
+  
+  let finalPrice = price - discount;
+  
+  console.log(`The final price is: ${finalPrice} lv.`);
   console.log(`The discount is: ${discount} lv.`)
+  
 }
+
