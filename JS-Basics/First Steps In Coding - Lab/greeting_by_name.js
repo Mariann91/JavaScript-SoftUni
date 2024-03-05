@@ -1,5 +1,5 @@
-function greeting(input) {
-  let name = input[0];
-  let hello = `Hello, ${name}!`
-  console.log(hello)
+function greetingByName(name){
+  let result = `Hello, ${name}!`
+  
+  console.log(result); 
 }
