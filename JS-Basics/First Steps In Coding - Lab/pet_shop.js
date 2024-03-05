@@ -1,8 +1,11 @@
-function calculateCost(input) {
-  let dogFoodPrice = 2.50;
-  let catFoodPrice = 4.00;
-  let dogFoodCount = Number(input[0]);
-  let catFoodCount = Number(input[1]);
-  let result = dogFoodCount * dogFoodPrice + catFoodCount * catFoodPrice;
-  console.log(`${result} lv.`);
+function petShop(data){
+  const dogFoodPrice = 2.50;
+  const catFoodPrice = 4;
+  let dogFoodPackages = Number(data[0]);
+  let catFoodPackages = Number(data[1]);
+  
+  let finalPrice = dogFoodPrice * dogFoodPackages + catFoodPackages * catFoodPrice;
+  
+  console.log(`${finalPrice} lv.`);
+  
 }
