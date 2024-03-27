@@ -1,16 +1,14 @@
-function triangleOfNumbers(n) {
-   let counter = 0;
+function solve(rows) {
+  let result = ``;
+  
+  for (let row = 1; row  <= rows; row++) {
+    
+    for (let col = 0; col < row; col++) {
+      result += `${row} `;
+    }
+    result += "\n"
+  }
 
-   for (let rows = 1; rows <= n; rows++) {
+   console.log(result)
 
-      for (let cols = 1; cols <= rows; cols++) {
-         
-         
-         if (rows === cols) {
-            counter++;
-            let repeatedNumber = String(counter) + " ";
-            console.log(repeatedNumber.repeat(rows));
-         }
-      }
-   }
 }
