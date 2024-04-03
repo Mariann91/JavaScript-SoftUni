@@ -13,6 +13,7 @@ function solve(array) {
       } else {
         guests.push(itemData[0])
       }
+      
     } else {
       
        if (guests.includes(itemData[0])) {
@@ -23,11 +24,8 @@ function solve(array) {
         
       } else {
         console.log(`${itemData[0]} is not in the list!`)
+     }
     }
   }
-  }
-  
   console.log(guests.join("\n"));
-  
-
 }
